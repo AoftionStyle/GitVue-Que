@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+  
+</head>
+<body>
+  <div id="app">
+    <p>{{ message }}</p>
+    <ol>
+      <li v-for="order in queueOrders">{{ order }}</li>
+    </ol>
+    <input v-model="newOrder" @keydown.enter="addOrder()">
+  </div>
+  <script src="vueQue.js"></script>
+</body>
+</html>
